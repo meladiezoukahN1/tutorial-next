@@ -1,12 +1,10 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import { inter } from "app/ui/fonts";
 import Search from "@/app/ui/search";
 import {
   // CustomersTableType,
   FormattedCustomersTable,
 } from "@/app/lib/definitions";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default async function CustomersTable({
   customers,

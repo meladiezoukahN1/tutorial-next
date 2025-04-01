@@ -1,14 +1,5 @@
 import "@/app/ui/global.css";
-import { Inter, Roboto } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-
-const roboto = Roboto({
-  weight: ["400", "700"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-  display: "swap",
-});
+import { roboto } from "app/ui/fonts";
 
 export default function RootLayout({
   children,
@@ -16,7 +7,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.className} ${roboto.className}`}>
+    <html lang="en" className={roboto.className}>
       <body>{children}</body>
     </html>
   );
